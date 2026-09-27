@@ -1,0 +1,41 @@
+/* စာမျက်နှာ အလယ်ပို့ */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: aqua;
+    font-family: Arial, sans-serif;
+}
+
+/* Home Box */
+.home-container {
+    background-color: aliceblue;
+    padding: 60px 80px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform-origin: top center;   /* အပေါ်နားကနေ စတင် ကြီးလာ */
+    animation: growDown 0.8s ease-out;
+}
+
+/* Box အပေါ်နားကနေ သေးရာကနေ ကြီးလာတဲ့ Animation */
+@keyframes growDown {
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* စာအကြီးကြီး */
+.home-container h1 {
+    font-size: 48px;
+    color: #ea0056;
+    margin: 0;
+}
+

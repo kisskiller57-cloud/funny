@@ -1,0 +1,163 @@
+/* စာမျက်နှာ အလယ်ပို့ */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: aqua;
+    font-family: Arial, sans-serif;
+}
+
+/* Form Box */
+form {
+    background-color: aliceblue;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 350px;
+}
+
+/* Heading */
+.form-title {
+    text-align: center;
+    color: #1877f2;
+    margin-bottom: 5px;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* Label */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Input */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #12a3f1;
+    outline: none;
+    box-shadow: 0 0 8px rgba(24, 202, 242, 0.3);
+}
+
+/* Remember Me */
+.remember-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.remember-group label {
+    display: inline;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0d5ecc;
+}
+
+/* Sign Up Link */
+.signup-link {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Message Box */
+.message-box {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100px);
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: 0.4s ease;
+    z-index: 1000;
+}
+
+.message-box.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.message-box.success {
+    background-color: #27ae60;
+}
+
+/* Message Box */
+.message-box {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100px);
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: 0.4s ease;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.message-box.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.message-box.success {
+    background-color: #27ae60;
+}

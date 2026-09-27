@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register_style.css">
+    <title>Register</title>
+</head>
+<body>
+
+    <div id="messageBox" class="message-box"></div>
+    
+    <form id="registerForm">
+
+        <h2 class="form-title">Create Account</h2>
+        <p class="form-subtitle">Join us today! Fill in the details to get started.</p>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create your password">
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+
+        <label>Gender:</label>
+        <div class="gender-group">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+
+        <div class="terms-group">
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I agree to the terms & conditions and privacy policy</label>
+        </div>
+
+        <button type="submit">Sign Up</button>
+
+        <p class="login-link">
+            Already have an account? <a href="login.html">Login</a>
+        </p>
+
+    </form>
+
+    <script src="auth.js"></script>
+</body>
+</html>
